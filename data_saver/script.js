@@ -5,8 +5,10 @@ var num = [];
 
 if (data === Number) {
     num.push(data);
+    console.log(num);
 } else if(data === String) {
-    text.push(data)
+    text.push(data);
+    console.log(text);
 } else{
     alert("Invalid value");
 }
