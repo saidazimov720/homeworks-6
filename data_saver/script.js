@@ -4,11 +4,11 @@ var text = [];
 var num = [];
 
 if (!isNaN(data) && data.trim() !=="") {
-    num.push(data);
-    console.log(num);
-} else if(data === String) {
+    num.push(Number(data));
+    console.log("Number array:", num);
+} else if(isNaN(data) && data.trim() !=="") {
     text.push(data);
-    console.log(text);
+    console.log("text array:", text);
 } else{
     alert("Invalid value");
 }
