@@ -3,7 +3,7 @@ var data = prompt("Enter your data");
 var text = [];
 var num = [];
 
-if (data === Number) {
+if (!isNaN(data) && data.trim() !=="") {
     num.push(data);
     console.log(num);
 } else if(data === String) {
