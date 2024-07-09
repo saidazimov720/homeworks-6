@@ -19,5 +19,7 @@ function converter() {
     var amountRUB = amountUZS * exchange[1][2];
     var amountINR = amountUZS * exchange[1][3];
 
-    
+    function formatCurrency(amount) {
+        var formattedAmount = amount.toFixed(2);
+    }
 }
