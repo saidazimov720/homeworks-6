@@ -21,5 +21,8 @@ function converter() {
 
     function formatCurrency(amount) {
         var formattedAmount = amount.toFixed(2);
+        if (Number.isInteger(amount)) {
+            formattedAmount += ".00";
+        }
     }
 }
