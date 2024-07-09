@@ -13,5 +13,11 @@ function converter() {
         return;
     }
 
+    amountUZS = Number(amountUZS);
+
+    var amountUSD = amountUZS * exchange[1][0];
+    var amountRUB = amountUZS * exchange[1][2];
+    var amountINR = amountUZS * exchange[1][3];
+
     
 }
