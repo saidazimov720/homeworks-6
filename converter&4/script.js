@@ -28,8 +28,15 @@ function converter() {
         if (Number.isInteger(amount)) {
             formattedAmount += ".00";
         }
+        return formattedAmount;
     }
 
     var result = "Result amounts:\n";
+    result += amountUZS + "UZS\n"; 
     result += formattedUSD + "USD\n";
+    result += formattedRUB + "RUB\n";
+    result += formattedINR + "INR\n";
+    alert(result);
 }
+
+converter();
